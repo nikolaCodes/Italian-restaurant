@@ -19,10 +19,9 @@ Welcome to **Amore e Sapori**, a captivating website for an imaginary Italian re
 
 - **HTML5**: For structuring the content.
 - **CSS3**: For styling and layout design.
-- **JavaScript**: For interactivity and dynamic features.
 - **Google Fonts**: To enhance typography.
 - **Font Awesome**: For modern icons.
-- **SimpleLightbox**: For creating a sleek, responsive image gallery.
+- **jQuery - SimpleLightbox**: For creating a sleek, responsive image gallery.
 
 ---
 
