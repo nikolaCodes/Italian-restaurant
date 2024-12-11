@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+header {
+    background-image: url(slike/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+header nav {
+    width: 100%;
+    background-color: rgba(0, 66, 37, 0.9);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+header nav ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ol li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ol li a {
+    text-decoration: none;
+    padding: 20px 30px;
+    border-bottom: 3px solid #ffb000;
+    color: white;
+}
+
+header nav ol li a:hover {
+    background-color: #ffb000;
+    color: #004225;
+}
+
+header nav img {
+    width: 10%;
+}
+
+footer {
+    background-color: rgba(0, 66, 37, 0.9);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footerContainer {
+    width: 70%;
+    text-align: center;
+    background-color: rgba(0, 66, 37, 0.9);
+    color: white;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom: 2px solid #ffb000;
+}
+
+footer .footerContainer a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolone, svaka zauzima po 1/3 dostupne širine */
+    gap: 20px; /* Razmak između slika */
+}
+
+.gallery img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.gallery a img:hover {
+    transform: scale(1.05);
+}
+
+.pozadinskaBoja {
+    background-color: rgba(0, 66, 37, 0.9);
+    padding: 40px 0;
+}
+
+.menuContent {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 0.2% 3%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 80% 10%;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    width: 75%;
+    background-color: #004225;
+    border: none;
+    height: 3px;
+}
+
+.pozadinskaBoja .menuContent hr {
+    width: 80%;
+    background-color: #ffb000;
+    border: none;
+    height: 3px;
+}
+
+.payment {
+    width: 100%;
+}
+
+.second-grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+}
+
+.second-grid-items {
+    display: flex;
+    align-items: flex-start;
+}
+
+iframe {
+    width: 70%;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+#location {
+    text-align: center;
+}
+
+.pozadinskaBoja2 {
+    background-color: #f5f5dc;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.contactus {
+    width: 70%;
+}
+
+.pozadinskaBoja2 .contactus h2 {
+    color: #004225;
+}
+
+.pozadinskaBoja2 .contactus a {
+    text-decoration: none;
+    color: #004225;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 992px){
+    header nav ol li a {
+        padding: 10px 20px;
+    }
+
+    header nav img {
+        width: 12%;
+    }
+
+    .container, .contactus, footer .footerContainer {
+        width: 75%;
+    }
+
+    .menuContent {
+        width: 60%;
+    }
+
+    iframe {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header nav ol li a {
+        padding: 5px 15px;
+    }
+
+    header nav img {
+        width: 14%;
+    }
+
+    .container, .contactus, footer .footerContainer {
+        width: 82%;
+    }
+
+    .menuContent {
+        width: 75%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    header {
+        height: 350px;
+    }
+    
+    header nav {
+        position: static;
+        display: block;
+        height: 350px;
+    }
+
+    header nav ol li {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    header nav img {
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+    }
+
+    header nav ol li a {
+        border: none;
+    }
+
+    .container, .contactus, footer .footerContainer {
+        width: 90%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .menuContent {
+        width: 85%;
+    }
+}
